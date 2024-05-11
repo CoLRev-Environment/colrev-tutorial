@@ -8,6 +8,7 @@
     "-v",
     "/var/run/docker.sock:/var/run/docker.sock"
   ],
+  "postCreateCommand": "docker pull pandoc/latex:3.1 && docker pull lfoppiano/grobid:0.8.0",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -18,7 +19,8 @@
       "extensions": [
         "streetsidesoftware.code-spell-checker",
         "markdown.showPreview",
-        "mhutchie.git-graph"
+        "mhutchie.git-graph",
+        "tomoki1207.pdf"
       ],
       "settings": {
         "markdown.extension.preview.autoShowPreviewToSide": true,

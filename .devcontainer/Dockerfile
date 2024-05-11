@@ -25,7 +25,7 @@ RUN chmod +x /usr/local/bin/adjust-docker-group.sh
 RUN pip install git+https://github.com/CoLRev-Environment/colrev
 
 # Use the adjust-docker-group.sh script as an entry point to adjust the docker group ID at runtime
-ENTRYPOINT ["/usr/local/bin/adjust-docker-group.sh"]
+ENTRYPOINT ["/usr/local/bin/dockerfile_entrypoint.sh"]
 
 # Specify the default command, if any, or override with your own command
 CMD ["bash"]
