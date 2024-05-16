@@ -20,7 +20,8 @@
         "streetsidesoftware.code-spell-checker",
         "markdown.showPreview",
         "mhutchie.git-graph",
-        "mathematic.vscode-pdf"
+        "mathematic.vscode-pdf",
+        "searKing.preview-vscode"
       ],
       "settings": {
         "markdown.extension.preview.autoShowPreviewToSide": true,
