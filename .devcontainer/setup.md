@@ -115,7 +115,7 @@ In the colrev data operation, records transition from `rev_included` to `rev_syn
 
 1. The paper-md endpoint is added per default for most of the review types. It can be used to create a review protocol or a manuscript based on pandoc and csl citation styles.
 
-2. Add a PRISMA chart as our second data endpoint:
+2. Add a PRISMA chart as our second data endpoint (if it is not already in the [settings](/settings.json)):
 ```
 colrev data --add colrev.prisma
 ```
