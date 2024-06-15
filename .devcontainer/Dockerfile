@@ -22,7 +22,8 @@ COPY adjust-docker-group.sh /usr/local/bin/adjust-docker-group.sh
 RUN chmod +x /usr/local/bin/adjust-docker-group.sh
 
 # Install colrev from the Git repository
-RUN pip install git+https://github.com/CoLRev-Environment/colrev
+RUN pip install colrev
+# from github: pip install git+https://github.com/CoLRev-Environment/
 
 # Use the adjust-docker-group.sh script as an entry point to adjust the docker group ID at runtime
 ENTRYPOINT ["/usr/local/bin/dockerfile_entrypoint.sh"]
