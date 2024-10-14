@@ -1,5 +1,8 @@
 {
   "name": "Python 3",
+  "extensions": [
+    "ms-toolsai.jupyter",     // Jupyter extension
+],
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
@@ -11,13 +14,10 @@
   "postCreateCommand": "for repo in pandoc/latex:3.1.13 lfoppiano/grobid:0.8.0 jbarlow83/ocrmypdf:latest; do docker pull $repo; done;",
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        ".devcontainer/setup.md"
-      ]
+      "openFiles": [] // ".devcontainer/tutorial.ipynb"
     },
     "vscode": {
       "extensions": [
-        "streetsidesoftware.code-spell-checker",
         "markdown.showPreview",
         "mhutchie.git-graph",
         "mathematic.vscode-pdf",
