@@ -1,5 +1,5 @@
 # Extend the specified Python image
-FROM mcr.microsoft.com/vscode/devcontainers/python:0-3.10-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.12-bullseye
 
 # Install Docker CLI
 RUN apt-get update && apt-get install -y \
@@ -24,8 +24,8 @@ RUN chmod +x /usr/local/bin/adjust-docker-group.sh
 # Install colrev from the Git repository
 # RUN pip install colrev
 # from github: 
-# RUN pip install git+https://github.com/CoLRev-Environment/colrev
-RUN pip install git+https://github.com/CoLRev-Environment/colrev@package_rename
+RUN pip install git+https://github.com/CoLRev-Environment/colrev
+# RUN pip install git+https://github.com/CoLRev-Environment/colrev@package_rename
 
 # Use the adjust-docker-group.sh script as an entry point to adjust the docker group ID at runtime
 ENTRYPOINT ["/usr/local/bin/dockerfile_entrypoint.sh"]
