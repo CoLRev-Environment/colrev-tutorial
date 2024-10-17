@@ -14,7 +14,7 @@
   "postCreateCommand": "for repo in pandoc/latex:3.1.13 lfoppiano/grobid:0.8.1 jbarlow83/ocrmypdf:latest; do docker pull $repo; done;",
   "customizations": {
     "codespaces": {
-      "openFiles": [".devcontainer/README.md"]
+      "openFiles": ["README.md"]
     },
     "vscode": {
       "extensions": [
