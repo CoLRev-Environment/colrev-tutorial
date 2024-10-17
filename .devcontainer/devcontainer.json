@@ -14,7 +14,7 @@
   "postCreateCommand": "colrev install all_internal_packages && for repo in pandoc/latex:3.1.13 lfoppiano/grobid:0.8.1 jbarlow83/ocrmypdf:latest; do docker pull $repo; done;",
   "customizations": {
     "codespaces": {
-      "openFiles": [".devcontainer/tutorial.ipynb"]
+      "openFiles": [".devcontainer/README.md"]
     },
     "vscode": {
       "extensions": [
