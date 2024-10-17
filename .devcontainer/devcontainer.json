@@ -29,7 +29,10 @@
         "workbench.colorTheme": "Default Dark+",
         "window.autoDetectColorScheme": true,
         "workbench.startupEditor": "none", 
-        "markdown.preview.scrollPreviewWithEditor": true
+        "markdown.preview.scrollPreviewWithEditor": true,
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor"
+        }
       }
     }
   }
