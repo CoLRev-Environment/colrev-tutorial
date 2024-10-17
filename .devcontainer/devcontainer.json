@@ -11,7 +11,7 @@
     "-v",
     "/var/run/docker.sock:/var/run/docker.sock"
   ],
-  "postCreateCommand": "for repo in pandoc/latex:3.1.13 lfoppiano/grobid:0.8.1 jbarlow83/ocrmypdf:latest; do docker pull $repo; done; && code README.md --reuse-window --wait && code -r --command 'markdown.showPreview'",
+  "postCreateCommand": ".devcontainer/post-start.sh",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
